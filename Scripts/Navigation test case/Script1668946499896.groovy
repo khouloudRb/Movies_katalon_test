@@ -21,7 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:3000/')
 
+WebUI.waitForElementClickable(findTestObject('Page_Movie Search n Save/button_Save'), 0)
+
 WebUI.click(findTestObject('Object Repository/Page_Movie Search n Save/button_Save'))
+
+WebUI.waitForElementClickable(findTestObject('Page_Movie Search n Save/button_Delete'), 0)
 
 WebUI.click(findTestObject('Object Repository/Page_Movie Search n Save/button_Delete'))
 
